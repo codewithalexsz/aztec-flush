@@ -30,3 +30,5 @@ Create a .env file in your project root and copy the contents of .env-example to
 
  # START FLUSH
 node flush.js
+# or run with docker
+docker-compose up --build -d
