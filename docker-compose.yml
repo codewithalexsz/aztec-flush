@@ -1,0 +1,11 @@
+services:
+  aztec-bot:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - ./wallet.txt:/app/wallet.txt
+    env_file:
+      - .env
+    # Optional: if you want to see logs immediately and attach interactive
+    # tty: true 
+    # stdin_open: true
