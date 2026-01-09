@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package.json package-lock.json* ./
 
 # Install dependencies
-RUN npm ethers@6 dotenv
+RUN npm install ethers@6 dotenv
 
 # Copy source code
 COPY . .
@@ -18,3 +18,4 @@ ENV NODE_ENV=production
 
 # Run the bot
 CMD ["node", "flush.js"]
+
